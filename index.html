@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <head>
+
+    <body>
+        <div class="container">
+
+            <div class="row desktop">
+                <div class="size-h text-center">
+                    <p style="font-size:24px;">Shuffle and Sort</p>
+                </div>
+                <div class="col-lg-9 col-md-9 col-xs-9">
+
+                    <table width="100%" border="1">
+                        <tr>
+                            <td id="one" class="one">2</td>
+                            <td id="two" class="two">3</td>
+                            <td id="three" class="three">1</td>
+                        </tr>
+                        <tr>
+                            <td id="four" class="four">4</td>
+                            <td id="five" class="five">8</td>
+                            <td id="six" class="six">9</td>
+                        </tr>
+                        <tr>
+                            <td id="seven" class="seven">5</td>
+                            <td id="eight" class="eight">6</td>
+                            <td id="nine" class="nine">7</td>
+                        </tr>
+                    </table>
+                    <div class="size-h text-center">
+                        <p>Shuffle and Sort by (UPENRA KUMAR)</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <button class="btn btn-block btn-primary" id="shuffle">Shuffle</button>
+                    <button class="btn btn-block btn-primary" id="sort">Sort</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="size-h text-center heading-mobile">
+                <p>Shuffle and Sort</p>
+            </div>
+            <div class="container">
+                <div class="row size-h">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6"><button class="btn btn-block  btn-primary"
+                            id="shuffle-m">Shuffle</button></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6"><button class="btn btn-block btn-primary"
+                            id="sort-m">Sort</button></div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <table width="100%" border="0">
+                            <tr>
+                                <td id="one-m" class="one-b">2</td>
+                            </tr>
+                            <tr>
+                                <td id="two-m" class="two-b">3</td>
+                            </tr>
+                            <tr>
+                                <td id="three-m" class="three-b">1</td>
+                            </tr>
+                            <tr>
+
+                                <td id="four-m" class="four-b">4</td>
+                            </tr>
+                            <tr>
+                                <td id="five-m" class="five-b">8</td>
+                            </tr>
+                            <tr>
+                                <td id="six-m" class="six-b">9</td>
+                            </tr>
+                            <tr>
+                                <td id="seven-m" class="seven-b">5</td>
+                            </tr>
+                            <tr>
+                                <td id="eight-m" class="eight-b">6</td>
+                            </tr>
+                            <tr>
+                                <td id="nine-m" class="nine-b">7</td>
+                            </tr>
+                        </table>
+                        <div class="size-h text-center">
+                            <p>Shuffle and sort by (UPENRA KUMAR)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        jQuery(function ($) {
+            $('#shuffle').on('click', function () {
+                $('#one').css('background', '#6F98A8');
+                $('#two').css('background', '#2B8EAD');
+                $('#three').css('background', '#2F454E');
+                $('#four').css('background', '#2B8EAD');
+                $('#five').css('background', '#2F454E');
+                $('#six').css('background', '#BFBFBF');
+                $('#seven').css('background', '#BFBFBF');
+                $('#eight').css('background', '#6F98A8');
+                $('#nine').css('background', '#2F454E');
+
+            });
+
+            $('#sort').on('click', function () {
+                $('#one').text("1");
+                $('#two').text("2");
+                $('#three').text("3");
+                $('#four').text("4");
+                $('#five').text("5");
+                $('#six').text("6");
+                $('#seven').text("7");
+                $('#eight').text("8");
+                $('#nine').text("9");
+
+            });
+
+            $('#shuffle-m').on('click', function () {
+
+                $('#one-m').css('border-left', '20px solid #6F98A8');
+                $('#two-m').css('border-left', '20px solid #2B8EAD');
+                $('#three-m').css('border-left', '20px solid #2F454E');
+                $('#four-m').css('border-left', '20px solid #2B8EAD');
+                $('#five-m').css('border-left', '20px solid #2F454E');
+                $('#six-m').css('border-left', '20px solid #BFBFBF');
+                $('#seven-m').css('border-left', '20px solid #BFBFBF');
+                $('#eight-m').css('border-left', '20px solid #6F98A8');
+                $('#nine-m').css('border-left', '20px solid #2F454E');
+
+            });
+
+            $('#sort-m').on('click', function () {
+
+                $('#one-m').text("1");
+                $('#two-m').text("2");
+                $('#three-m').text("3");
+                $('#four-m').text("4");
+                $('#five-m').text("5");
+                $('#six-m').text("6");
+                $('#seven-m').text("7");
+                $('#eight-m').text("8");
+                $('#nine-m').text("9");
+
+            });
+
+
+
+
+        });
+    </script>
+
+</html>
